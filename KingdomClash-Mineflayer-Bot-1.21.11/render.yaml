@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: kingdomclash-mineflayer-bot
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: MC_HOST
+        value: kingdomclash879.mcsh.io
+      - key: MC_PORT
+        value: "25565"
+      - key: MC_USERNAME
+        sync: false
+      - key: MC_PASSWORD
+        sync: false
+      - key: MC_VERSION
+        value: "1.21.11"
+      - key: MC_AUTH
+        value: offline
+      - key: REGISTER_COMMAND
+        value: "/register {password} {password}"
+      - key: LOGIN_COMMAND
+        value: "/login {password}"
+      - key: RECONNECT_DELAY
+        value: "10000"
+      - key: LOGIN_DELAY
+        value: "2500"

@@ -1,0 +1,16 @@
+{
+  "name": "kingdomclash-mineflayer-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mineflayer bot for KingdomClash with reconnect and UserLogin/AuthMe-style authentication.",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "mineflayer": "^4.32.0"
+  }
+}

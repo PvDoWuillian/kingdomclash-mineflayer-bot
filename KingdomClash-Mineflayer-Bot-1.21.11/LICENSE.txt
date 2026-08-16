@@ -1,0 +1,1 @@
+This project is provided for personal server administration and testing. No warranty is provided.
